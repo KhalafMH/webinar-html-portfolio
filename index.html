@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi AlKhalaf</title>
+
+    <style>
+        body {
+            max-width: 90vw;
+            margin: 0 5vw;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "logo . headline"
+                "line line line"
+                "code code code"
+                "projectsTitle . ."
+                "candy airplane landscape";
+        }
+
+        img {
+            max-width: inherit;
+        }
+
+        #logo {
+            grid-area: logo;
+            align-self: center;
+        }
+
+        #headline {
+            grid-area: headline;
+            text-align: right;
+        }
+
+        #line {
+            grid-area: line;
+            background-color: lightslategrey;
+            height: 10px;
+            width: 90vw;
+            margin-bottom: 24px;
+        }
+
+        #code {
+            grid-area: code;
+            max-width: 90vw;
+        }
+
+        #projectsTitle {
+            grid-area: projectsTitle;
+        }
+
+        #candy {
+            grid-area: candy;
+        }
+
+        #airplane {
+            grid-area: airplane;
+        }
+
+        #landscape {
+            grid-area: landscape;
+        }
+
+        .project {
+            max-width: 28vw;
+            justify-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="logo" src="img/logo.png" alt="logo">
+
+    <div id="headline">
+        <h1>Mahdi AlKhalaf</h1>
+        <h2>DevOps Engineer</h2>
+    </div>
+
+    <div id="line"></div>
+
+    <img id="code" src="img/code.jpg" alt="code">
+
+    <h2 id="projectsTitle">Featured Work</h2>
+
+    <div id="candy" class="project">
+        <img src="img/candy.jpg" alt="candy">
+        <h3>Candy</h3>
+        <p>https://github.com/khalafmh/candy/</p>
+    </div>
+
+    <div id="airplane" class="project">
+        <img src="img/airplane.jpg" alt="airplane">
+        <h3>Airplane</h3>
+        <p>https://github.com/khalafmh/airplane/</p>
+    </div>
+
+    <div id="landscape" class="project">
+        <img src="img/landscape.jpg" alt="airplane">
+        <h3>Landscape</h3>
+        <p>https://github.com/khalafmh/landscape/</p>
+    </div>
+</body>
+
+</html>
